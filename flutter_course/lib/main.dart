@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_course/result.dart';
 
-import 'question.dart';
-import 'answer.dart';
 import 'quiz.dart';
 
 // void main() {
@@ -116,7 +114,10 @@ class _MyAppState extends State<MyApp> {
                 questionIndex: _questionIndex,
                 questions: _questions,
               )
-            : Result(_totalScore, _resetQuiz), //Esto es el else del if
+            : Result(
+                _totalScore,
+                _resetQuiz,
+              ), //Esto es el else del if
       ),
     );
   }
