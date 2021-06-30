@@ -36,18 +36,19 @@ class Body extends StatelessWidget {
                     2, //Número de productos que queremos por columna
                 mainAxisSpacing: kDefaultPaddin,
                 crossAxisSpacing: kDefaultPaddin,
-                childAspectRatio: 0.75, //Distancia entre los productos
+                childAspectRatio: 0.75, //Relación de aspecto de los productos
               ),
               itemBuilder: (context, index) => ItemCard(
                 product: products[index],
                 press: () => Navigator.push(
-                    //Función al pulsar el producto
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => DetailsScreen(
-                        product: products[index],
-                      ),
-                    )),
+                  //Función al pulsar el producto
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailsScreen(
+                      product: products[index],
+                    ),
+                  ),
+                ),
               ),
             ),
           ),

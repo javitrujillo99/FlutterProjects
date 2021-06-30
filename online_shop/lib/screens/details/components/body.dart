@@ -25,8 +25,8 @@ class Body extends StatelessWidget {
           SizedBox(
             height: size.height,
             child: Stack(
-              //Stack es como column o row, una view
-              //Create a stack layout widget
+              //Stack es como column o row, una view que se pone encima
+              // de otro widget
               children: [
                 Container(
                   //Container del fondo blanco
